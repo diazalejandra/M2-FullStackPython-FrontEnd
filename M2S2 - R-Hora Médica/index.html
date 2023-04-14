@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Hora Médica</title>
+</head>
+<body>
+<h1>FORMULARIO</h1>
+<form action="./gracias.html" method="POST">
+    <label for="fullName">NOMBRE</label>
+    <br>
+    <input type="text" id="fullName" name="fullName">
+    <br>
+    <br>
+    <label for="address">DIRECCIÓN</label>
+    <br>
+    <input type="text" id="address" name="address">
+    <br>
+    <br>
+    <label for="specialty">ESPECIALIDAD MÉDICA</label>
+    <br>
+    <select name="specialty" id="specialty">
+        <option value="medinterna">MEDICINA INTERNA</option>
+        <option value="medgeneral">MEDICINA GENERAL</option>
+        <option value="traumatologia">TRAUMATOLOGÍA</option>
+        <option value="nutricionista">NUTRICIONISTA</option>
+    </select>
+    <br>
+    <br>
+    <label for="date">FECHA</label>
+    <br>
+    <input type="date" id="date" name="date">
+    <br>
+    <br>
+    <label for="time">HORA</label>
+    <br>
+    <input type="time" id="time" name="time">
+    <br>
+    <br>
+    <label for="correo">CORREO</label>
+    <br>
+    <input type="email" name="correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required> <!--Permite enviar múltiples emails separados por coma-->
+    <br>
+    <br>
+    <input type="submit" value="CONFIRMAR">
+</form>    
+</body>
+</html>

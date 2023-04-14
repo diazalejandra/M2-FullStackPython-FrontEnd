@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <form action="./redireccion.html" method="POST">
+        <label for="firstName">Nombre:</label>
+        <input type="text" name="firstName" id="firstName" placeholder="Ingresa tu nombre">
+        <br>
+        <label for="lastName">Apellido:</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Ingresa tu apellido">
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" multiple> <!--Permite enviar múltiples emails separados por coma-->
+        <br>
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required> <!--Permite enviar múltiples emails separados por coma-->
+        <br>
+        <label for="lista">Datalist:</label>
+        <input type="text" name="lista" list="colores">
+        <datalist id="colores">
+            <option value="rojo">Rojo</option>
+            <option value="azul">Azul</option>
+            <option value="amarillo">Amarillo</option>
+        </datalist>
+        <br>
+        <label for="animales">Select:</label>
+        <select name="animales" id="animales">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="conejo">Conejo</option>
+        </select>
+        <br>
+        <label for="">Verde:</label>
+        <input type="checkbox" value="verde" checked>
+        <label for="">Amarillo:</label>
+        <input type="checkbox" value="amarillo">
+        <label for="">Rojo:</label>
+        <input type="checkbox" value="rojo">
+        <br>
+        <label for="">Verde:</label>
+        <input type="radio" value="verde" name="color">
+        <label for="">Amarillo:</label>
+        <input type="radio" value="amarillo" name="color">
+        <label for="">Rojo:</label>
+        <input type="radio" value="rojo" name="color">
+        <br>
+        <label for="">Color:</label>
+        <input type="color">
+        <br>
+        <label for="">Fecha:</label>
+        <input type="date">
+        <br>
+        <label for="">Datetime:</label>
+        <input type="datetime-local">
+        <br>
+        <label for="">Time:</label>
+        <input type="time">
+        <br>
+        <label for="">Month:</label>
+        <input type="month">
+        <br>
+        <label for="">File:</label>
+        <input type="file">
+        <br>
+        <label for="">URL:</label>
+        <input type="url">
+        <br>
+        <label for="">Rango:</label>
+        <input type="range" max="10">
+        <br>
+        <!--opción 1-->
+        <label for="">Click me</label>
+        <input type="button" value="Click">
+        <!--opción 1-->
+        <label for="">Enviar:</label>
+        <input type="submit" value="Enviar">
+        <!--opción 2-->
+        <button>Enviar</button>
+    </form>
+</body>
+
+</html>

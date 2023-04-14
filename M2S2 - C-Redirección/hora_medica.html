@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Formulario</title>
+</head>
+
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="firstName"><b>Nombre</b></label></td>
+                <td><label for="lastName"><b>Apellido</b></label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="firstName" id="firstName"></td>
+                <td><input type="text" name="lastName" id="lastName"></td>
+            </tr>
+        </table>
+        <br>
+        <label for="address"><b>Dirección</b></label>
+        <br>
+        <textarea name="address" id="address" cols="44" rows="10"></textarea>
+        <br><br>
+        <label for="sex"><b>Sexo</b></label>
+        <br>
+        <select name="sex" id="sex">
+            <option value="0">Seleccione</option>
+            <option value="1">Femenino</option>
+            <option value="2">Marculino</option>
+            <option value="3">Otro</option>
+            <option value="4">Prefiero no especificar</option>
+        </select>
+        <br><br>
+        <label for="food"><b>Comida Favorita</b></label>
+        <br>
+        <input type="radio" name="food[]" value="chilena">
+        <label for="food">Chilena</label>
+        <input type="radio" name="food[]" value="china">
+        <label for="food">China</label>
+        <input type="radio" name="food[]" value="mexicana">
+        <label for="food">Mexicana</label>
+        <input type="radio" name="food[]" value="venezolana">
+        <label for="food">Venezolana</label>
+        <input type="radio" name="food[]" value="colombiana">
+        <label for="food">Colombiana</label>
+        <br><br>
+        <label for="sport"><b>Deporte Favorito</b></label>
+        <br>
+        <input type="checkbox" name="sport[]" id="bicicleta">
+        <label for="sport">Montar Bicicleta</label>
+        <input type="checkbox" name="sport[]" id="senderismo">
+        <label for="sport">Senderismo</label>
+        <input type="checkbox" name="sport[]" id="natacion">
+        <label for="sport">Natación</label>
+        <input type="checkbox" name="sport[]" id="football">
+        <label for="sport">Football</label>
+        <br><br>
+        <label for="birthdate"><b>Fecha de Nacimiento</b></label>
+        <br>
+        <input type="date" name="birthdate" id="birthdate">
+        <br><br>
+        <input type="button" value="Grabar">
+    </form>
+</body>
+
+</html>
