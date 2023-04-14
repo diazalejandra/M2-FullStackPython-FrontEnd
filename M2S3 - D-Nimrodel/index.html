@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIMRODEL Restaurant y Pub</title>
+    <link rel="shortcut icon" href="./assets/images/n.png">
+    <link rel="stylesheet" href="./assets/styles/general.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/images/n.png" alt="Logo Nimrodel">
+        <nav>
+            <ul>
+                <li>Nuestros Productos</li>
+                <li>Sobre Nosotros</li>
+                <li><a href="#comuniquemonos">Comuniquémonos</a></li>
+                <li><a href="#reserva">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Nimrodel Pub Restaurant</h1>
+        <article>
+            <h2>Destacados de la semana</h2>
+            <section>
+                <img src="./assets/images/bebidas.jpg" alt="Gaseosas" width="500px">
+                <h3>GASEOSAS</h3>
+                <p>Lorem ipsum, andae optio ea explicabo non voluptatum eaque.</p>
+            </section>
+            <section>
+                <img src="./assets/images/tablas.jpg" alt="Tablas" width="500px">
+                <h3>TABLAS</h3>
+                <p>Lorem ipsum, andae optio ea explicabo non voluptatum eaque.</p>
+            </section>
+            <section>
+                <img src="./assets/images/shop.jpeg" alt="Shop Cerveza" width="500px">
+                <h3>SHOP CERVEZA</h3>
+                <p>Lorem ipsum, andae optio ea explicabo non voluptatum eaque.</p>
+            </section>
+        </article>
+    </main>
+    <form action="" id="comuniquemonos">
+        <h3><strong>Comuniquémonos</strong></h3>
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="María Vargas" required>
+        <br><br>
+        <label for="email">Correo</label>
+        <input type="email" name="email" id="email" placeholder="mariavargas@correo.com"
+            pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
+        <br><br>
+        <label for="phone">Teléfono</label>
+        <input type="tel" name="phone" id="phone" placeholder="951236874" required>
+        <br><br>
+        <label for="reason">Motivo</label>
+        <input type="text" name="reason" list="reason" required>
+        <datalist id="reason">
+            <option value="Felicitaciones"></option>
+            <option value="Reclamos"></option>
+            <option value="Consultas"></option>
+            <option value="Sugerencias"></option>
+        </datalist>
+        <br><br>
+        <textarea name="reason_ex" id="reason_ex" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <br><br>
+    </form>
+    <form action="" id="reserva">
+        <h3><strong>Reserva</strong></h3>
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="xxx xxxxx" required>
+        <br><br>
+        <label for="email">Correo</label>
+        <input type="email" name="email" id="email" placeholder="xxx@xxx.xx" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+            required>
+        <br><br>
+        <label for="phone">Teléfono</label>
+        <input type="tel" name="phone" id="phone" placeholder="xxxxxxxxx" required>
+        <br><br>
+        <label for="date">Fecha</label>
+        <input type="date" name="date" id="date" required>
+        <br><br>
+        <label for="time">Hora</label>
+        <input type="time" name="time" id="time" required>
+        <br><br>
+        <label for="attendees">Cantidad de Asistentes</label>
+        <br>
+        <input type="number" name="attendees" id="attendees" required>
+        <br><br>
+        <input type="submit" value="Reservar">
+        <br><br>
+    </form>
+    <footer>
+        <p>Todos los derechos reservados <i class="far fa-registered" aria-hidden="true"></i></p>
+    </footer>
+</body>
+
+</html>
