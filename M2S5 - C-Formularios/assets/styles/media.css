@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+}
+@media (min-width: 576px) {
+    body{
+        background-color: red;
+    } 
+    .card-title{
+        color: red;
+    }   
+}
+@media (min-width: 768px) {
+    body{
+        background-color: blue;
+    }
+    .card-title{
+        color: blue;
+    }
+}
+
+@media (min-width: 992px) {
+    body{
+        background-color: burlywood;
+    }
+    .card-title{
+        color: black;
+    }    
+}
+
+@media (min-width: 1200px) {
+    body{
+        background-color: whitesmoke;
+    }
+    h1{
+        color: teal;
+    }
+    .card-title{
+        color: teal;
+    }
+}
