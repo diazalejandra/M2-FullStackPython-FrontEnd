@@ -1,0 +1,47 @@
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circulo {
+    height: 76px;
+    width: 76px;
+    border-radius: 50%;
+    border: 18px solid blue;
+    box-sizing: border-box;
+
+}
+
+.celda {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.cruz {
+    height: 76px;
+    width: 76px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.cruz:before,
+.cruz:after {
+    content: "";
+    position: absolute;
+    background-color: red;
+}
+
+.cruz:before {
+    left: 50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 100%;
+}
+
+.cruz:after {
+    top: 50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
+}
